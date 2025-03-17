@@ -59,6 +59,7 @@ const ViewDetails = () => {
           <img
             src={venueLogo}
             alt="Company Logo"
+            loading="lazy"
             class="w-[150px] h-[150px] rounded-full object-cover"
           />
 
@@ -107,31 +108,37 @@ const ViewDetails = () => {
             src={exb1}
             alt="Exhibition Stand"
             class="rounded-lg "
+            loading="lazy"
           />
           <img
             src={exb2}
             alt="Exhibition Stand"
             class="rounded-lg "
+            loading="lazy"
           />
           <img
             src={exb1}
             alt="Exhibition Stand"
             class="rounded-lg "
+            loading="lazy"
           />
           <img
             src={exb2}
             alt="Exhibition Stand"
             class="rounded-lg "
+            loading="lazy"
           />
           <img
             src={exb1}
             alt="Exhibition Stand"
             class="rounded-lg "
+            loading="lazy"
           />
           <img
             src={exb2}
             alt="Exhibition Stand"
             class="rounded-lg "
+            loading="lazy"
           />
         </div>
       </section>
