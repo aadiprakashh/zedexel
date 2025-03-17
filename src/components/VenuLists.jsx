@@ -28,9 +28,18 @@ const VenueLists = ({ projects }) => {
   const sortedProjects = [...projects].sort((a, b) => new Date(b.start_date) - new Date(a.start_date));
 
   // Apply search filtering
-  const filteredProjects = sortedProjects.filter((project) =>
-    project.name.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  const filteredProjects = sortedProjects.filter((project) => {
+    const query = searchQuery.toLowerCase();
+  
+    return (
+      project.name.toLowerCase().includes(query) ||
+      project.status.toLowerCase().includes(query) ||
+      project.venue.toLowerCase().includes(query) ||
+      project.start_date.toLowerCase().includes(query) || 
+      project.end_date.toLowerCase().includes(query)
+    );
+  });
+  
 
   // Calculate total pages after filtering
   const totalPages = Math.ceil(filteredProjects.length / itemsPerPage);
