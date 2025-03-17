@@ -2,9 +2,9 @@ import React from "react";
 import { FaBackspace, FaRecycle } from "react-icons/fa";
 import { IoIosArrowRoundBack, IoIosSearch } from "react-icons/io";
 import { MdSync } from "react-icons/md";
-import venueLogo from '../assets/image/company.png'
-import exb1 from '../assets/image/exb1.jpg'
-import exb2 from '../assets/image/exb2.jpg'
+import venueLogo from '../assets/image/company.webp'
+import exb1 from '../assets/image/exb1.webp'
+import exb2 from '../assets/image/exb2.webp'
 import { useNavigate } from "react-router-dom";
 import { useProject } from "./ProjectContext";
 const ViewDetails = () => { 
