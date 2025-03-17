@@ -1,7 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+@import "tailwindcss";
 .h1-color{
     background-image: linear-gradient(to right, #4F46E5, #3B82F6);
 

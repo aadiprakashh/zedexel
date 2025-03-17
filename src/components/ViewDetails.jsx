@@ -16,7 +16,7 @@ const ViewDetails = () => {
   }
   return (
     <>
-    <button className="flex items-center border p-1 rounded-md px-3 gap-2" onClick={() => navigate("/")}><IoIosArrowRoundBack size={20} className="text-gray-500"/>Go Back</button>
+    <button className="flex items-center border border-gray-300 p-1 rounded-md px-3 gap-2" onClick={() => navigate("/")}><IoIosArrowRoundBack size={20} className="text-gray-500"/>Go Back</button>
       {/* <!-- Navbar --> */}
       <div className="flex items-center justify-between mb-4 mt-2">
         <h1 className="text-3xl font-bold">{selectedProject.name}</h1>
@@ -35,7 +35,7 @@ const ViewDetails = () => {
       </div>
       {/* <!-- Tabs --> */}
       <nav class="flex">
-        <div className="flex space-x-8 border-b mt-4">
+        <div className="flex space-x-8 border-b border-gray-300 mt-4">
           <button class="pb-2 border-b-2 border-blue-500 text-blue-600 font-semibold">
             Details
           </button>

@@ -18,7 +18,7 @@ const VenueLists = ({ projects }) => {
 
   const [searchQuery, setSearchQuery] = useState(""); // Search state
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 8;
+  const itemsPerPage = 10;
 
   // Reset pagination on search change
   useEffect(() => {
@@ -67,7 +67,7 @@ const VenueLists = ({ projects }) => {
       </div>
 
       <div className="bg-white shadow rounded-lg overflow-hidden">
-        <table className="w-full text-left border-collapse">
+        <table className="w-full text-left">
           {/* Table Header */}
           <thead className="bg-[#F7F7F9] text-gray-600">
             <tr>
@@ -82,7 +82,7 @@ const VenueLists = ({ projects }) => {
             {currentData.map((exb, index) => (
               <tr
                 key={index}
-                className="hover:bg-gray-50 border-b cursor-pointer"
+                className="hover:bg-gray-50 cursor-pointer"
                 onClick={() => {
                   if (exb) {
                     setSelectedProject(exb);
@@ -123,7 +123,7 @@ const VenueLists = ({ projects }) => {
           {/* First Page */}
           {currentPage > 2 && (
             <>
-              <button className="px-3 py-1 border rounded" onClick={() => handlePageChange(1)}>
+              <button className="px-3 py-1 border border-gray-300 rounded" onClick={() => handlePageChange(1)}>
                 1
               </button>
               {currentPage > 3 && <span>...</span>}
@@ -136,7 +136,7 @@ const VenueLists = ({ projects }) => {
             .map((page) => (
               <button
                 key={page}
-                className={`px-3 py-1 border rounded ${page === currentPage ? "bg-gray-700 text-white" : ""}`}
+                className={`px-3 py-1 border border-gray-300 rounded ${page === currentPage ? "bg-gray-700 text-white" : ""}`}
                 onClick={() => handlePageChange(page)}
               >
                 {page}
@@ -147,7 +147,7 @@ const VenueLists = ({ projects }) => {
           {currentPage < totalPages - 1 && (
             <>
               {currentPage < totalPages - 2 && <span>...</span>}
-              <button className="px-3 py-1 border rounded" onClick={() => handlePageChange(totalPages)}>
+              <button className="px-3 py-1 border border-gray-300 rounded" onClick={() => handlePageChange(totalPages)}>
                 {totalPages}
               </button>
             </>
