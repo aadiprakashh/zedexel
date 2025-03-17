@@ -18,7 +18,7 @@ const VenueLists = ({ projects }) => {
 
   const [searchQuery, setSearchQuery] = useState(""); // Search state
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 10;
+  const itemsPerPage = 8;
 
   // Reset pagination on search change
   useEffect(() => {
