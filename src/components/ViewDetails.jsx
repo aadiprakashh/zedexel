@@ -82,11 +82,11 @@ const ViewDetails = () => {
             </div>
             <div>
               <p class="text-gray-500 text-sm">Venue hall number</p>
-              <p class="text-md font-semibold">05</p>
+              <p class="text-md font-semibold">{selectedProject.hall_number}</p>
             </div>
             <div>
               <p class="text-gray-500 text-sm">Venue stand number</p>
-              <p class="text-md font-semibold">20</p>
+              <p class="text-md font-semibold">{selectedProject.stand_number}</p>
             </div>
             <div>
               <p class="text-gray-500 text-sm">Venue city</p>
@@ -94,7 +94,7 @@ const ViewDetails = () => {
             </div>
             <div>
               <p class="text-gray-500 text-sm">Total sq. mtr</p>
-              <p class="text-md font-semibold">1450</p>
+              <p class="text-md font-semibold">{selectedProject.total_area}</p>
             </div>
           </div>
         </div>
